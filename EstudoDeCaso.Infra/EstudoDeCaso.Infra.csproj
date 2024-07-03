@@ -3,14 +3,20 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="Context\" />
-    <Folder Include="Repositories\Mapping\" />
-    <Folder Include="Repositories\Interfaces\" />
     <Folder Include="Repositories\Base\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EstudoDeCaso.Core\EstudoDeCaso.Core.csproj" />
   </ItemGroup>
 
 </Project>
